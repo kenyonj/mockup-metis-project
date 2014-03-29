@@ -1,6 +1,6 @@
 @import "bourbon/bourbon";
-@import "neat/neat";
 @import "bitters/bitters";
+@import "neat/neat";
 
 #logo {
   color: $light-gray;
@@ -230,7 +230,7 @@ a.darken:hover img {
 }
 
 a.darken:hover .text {
-  visibility:visible; 
+  visibility:visible;
 }
 
 #owl-demo .item{
@@ -325,7 +325,7 @@ a.darken:hover .text {
   position: relative;
 
   @include media($large-screen) {
-    @include span-columns(4);  
+    @include span-columns(4);
     @include omega(3n);
   }
 
@@ -415,11 +415,11 @@ a.darken:hover .text {
 
   &:hover {
     background-color: $card-hover-background;
-    
+
     .card-image img {
       background: $card-image-hover-background;
     }
-  
+
     .card-header {
       background-color: $card-hover-background;
     }
@@ -603,3 +603,21 @@ a.darken:hover .text {
     }
   }
 }
+.owl-theme .owl-buttons i{
+  margin-top: 2px;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: -45px;
+  top: 55px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: -45px;
+  top: 55px;
+}
+
