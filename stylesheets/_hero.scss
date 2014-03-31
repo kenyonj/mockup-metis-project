@@ -1,12 +1,13 @@
-.show-banner {
-  display: none;
+.site-info {
   @include outer-container;
-
+  @include box-shadow(0 0 5px 3px hsla(0, 0%, 0%, 0.65));
+  margin-top: 5px;
+  margin-bottom: 5px;
   .image-gradient-dynamic {
-    $image-gradient-color-top: white;
-    $transparency-top: .6;
-    $image-gradient-color-bottom: black;
-    $transparency-bottom: .6;
+    $image-gradient-color-top: black;
+    $transparency-top: .3;
+    $image-gradient-color-bottom: white;
+    $transparency-bottom: .3;
     $vertical-angle: 180deg;
 
     $image-gradient-color-left: black;
@@ -18,14 +19,14 @@
     position: relative;
     line-height: 0;
     width: 100%;
-    margin-bottom: $base-line-height;
+    // margin-bottom: $base-line-height;
 
     img {
-     width: 100%;
-     height: auto;
-     position: relative;
-     top: 0;
-     left: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
     }
 
     .copy {

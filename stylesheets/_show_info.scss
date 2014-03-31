@@ -1,6 +1,9 @@
 .show-info {
   display: none;
   @include outer-container;
+  @include box-shadow(0 0 5px 3px hsla(0, 0%, 0%, 0.65));
+  margin-top: 5px;
+  margin-bottom: 5px;
   .show-poster{
     @include span-columns(4);
     margin: 10px;
@@ -149,6 +152,5 @@
         }
       }
     }
-
   }
 }

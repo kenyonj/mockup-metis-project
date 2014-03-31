@@ -1,229 +1,213 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Trackr.tv</title>
+    <title>trackr.tv</title>
     <link rel="stylesheet" type="text/css" href="public/application.css">
-    <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="js/owl-carousel/owl.theme.css">
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/owl-carousel/owl.carousel.js"></script>
+    <link href="vendor/stylesheets/jquery.thumbnailScroller.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="vendor/javascripts/jquery-ui-1.8.13.custom.min.js"></script>
   </head>
   <body>
 
-    <div id="wrapper">
-      <header class="navigation">
-        <div class="menu-wrapper">
-          <a href="" class="logo">
-            <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_1.png" alt="">
-          </a>
-          <p class="menu-button" id="js-mobile-menu">MENU</p>
-          <div class="nav">
-            <ul id="navigation-menu">
-              <li><a href="">Products</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Contact</a></li>
-              <li class="sign-up"><a href="">Sign Up</a></li>
-            </ul>
+    <header class="navigation">
+      <div class="menu-wrapper">
+        <a href="index.html" class="logo">
+          <img src="images/tv.png" alt=""><span class="logo-text">trackr.tv</span>
+        </a>
+        <p class="menu-button" id="js-mobile-menu">MENU</p>
+        <div class="nav">
+          <ul id="navigation-menu">
+            <li><a href="javascript:void(0)">My Shows</a></li>
+            <li><a href="javascript:void(0)">Charts</a></li>
+            <li><a href="javascript:void(0)">Friends</a></li>
+            <li class="sign-up"><a href="javascript:void(0)">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="top-shows">
+      <div id="tS1" class="jThumbnailScroller">
+        <div class="jTscrollerContainer">
+          <div class="jTscroller">
+            <a href="#"><img src="images/mad-men.jpg" /></a>
+            <a href="#"><img src="images/archer.jpg" /></a>
+            <a href="#"><img src="images/breaking-bad.jpg" /></a>
+            <a href="#"><img src="images/broad-city.jpg" /></a>
+            <a href="#" id="show_id_234"><img src="images/flight-of-the-conchords.jpg" /></a>
+            <a href="#"><img src="images/game-of-thrones.jpg" /></a>
+            <a href="#"><img src="images/girls.jpg" /></a>
+            <a href="#"><img src="images/scandal.jpg" /></a>
+            <a href="#"><img src="images/homeland.jpg" /></a>
+            <a href="#"><img src="images/house-of-cards.jpg" /></a>
+            <a href="#"><img src="images/the-walking-dead.jpg" /></a>
+            <a href="#"><img src="images/the-wire.jpg" /></a>
+            <a href="#"><img src="images/true-detective.jpg" /></a>
+            <a href="#"><img src="images/workaholics.jpg" /></a>
           </div>
         </div>
-      </header>
-      <header>
-        <nav>
-          <ul>
-          </ul>
-        </nav>
-      </header>
-        <section>
-          <div id="owl-demo" class="owl-carousel owl-theme">
-            <div class="item"><a href="#" class="darken"><img src="images/mad-men.jpg"></a></div>
-            <div class="item"><a href="#" class="darken"><img src="images/archer.jpg"></a></div>
-            <div class="item"><a href="#" class="darken"><img src="images/breaking-bad.jpg"></a></div>
-            <div class="item"><a href="#" class="darken"><img src="images/broad-city.jpg"></a></div>
-            <div class="item"><a href="#" class="slide-button darken"><img src="images/flight-of-the-conchords.jpg"></a></div>
-            <div class="item"><a href="#" class="darken"><img src="images/game-of-thrones.jpg"></a></div>
-            <div class="item"><a href="#" class="darken"><img src="images/girls.jpg"></a></div>
-            <div class="item"><a href="#" class="darken"><img src="images/homeland.jpg"></a></div>
-            <div class="item"><a href="#" class="darken"><img src="images/house-of-cards.jpg"></a></div>
-            <div class="item"><a href="#" class="darken"><img src="images/scandal.jpg"></a></div>
-            <div class="item"><a href="#" class="darken"><img src="images/the-walking-dead.jpg"></a></div>
-            <div class="item"><a href="#" class="darken"><img src="images/the-wire.jpg"></a></div>
-            <div class="item"><a href="#" class="darken"><img src="images/true-detective.jpg"></a></div>
-            <div class="item"><a href="#" class="darken"><img src="images/workaholics.jpg"></a></div>
-          </div>
-          <div class="showinfo hidden">
-            <div class="image-gradient-dynamic">
-              <img src="https://image.tmdb.org/t/p/original/yzDrCWVtNfOuHzAsc6pH6G8QZg7.jpg" alt="">
-              <div class="overlay"></div>
-              <div class="copy">
-                <div class="show-image">
-                  <img src="images/flight-of-the-conchords.jpg">
-                </div>
-
-                <div class="show-seasons">
-                  <h2>Season 1</h2>
-                  <div id="owl-season1">
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/330948.jpg" alt="Episode Image"><span class="text">EPISODE 1</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/330949.jpg" alt="Episode Image"><span class="text">EPISODE 2</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/330950.jpg" alt="Episode Image"><span class="text">EPISODE 3</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/330951.jpg" alt="Episode Image"><span class="text">EPISODE 4</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/330952.jpg" alt="Episode Image"><span class="text">EPISODE 5</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/330953.jpg" alt="Episode Image"><span class="text">EPISODE 6</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/330954.jpg" alt="Episode Image"><span class="text">EPISODE 7</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/330955.jpg" alt="Episode Image"><span class="text">EPISODE 8</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/330956.jpg" alt="Episode Image"><span class="text">EPISODE 9</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/330957.jpg" alt="Episode Image"><span class="text">EPISODE 10</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/330958.jpg" alt="Episode Image"><span class="text">EPISODE 11</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/330959.jpg" alt="Episode Image"><span class="text">EPISODE 12</span></a></div>
-                  </div>
-                </div>
-
-                <div class="show-seasons">
-                  <h2>Season 2</h2>
-                  <div id="owl-season2">
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/417265.jpg" alt="Episode Image"><span class="text">EPISODE 1</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/422068.jpg" alt="Episode Image"><span class="text">EPISODE 2</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/422069.jpg" alt="Episode Image"><span class="text">EPISODE 3</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/422070.jpg" alt="Episode Image"><span class="text">EPISODE 4</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/422071.jpg" alt="Episode Image"><span class="text">EPISODE 5</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/433978.jpg" alt="Episode Image"><span class="text">EPISODE 6</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/433979.jpg" alt="Episode Image"><span class="text">EPISODE 7</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/443618.jpg" alt="Episode Image"><span class="text">EPISODE 8</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/443619.jpg" alt="Episode Image"><span class="text">EPISODE 9</span></a></div>
-                    <div class="item"><a href="#" class="darken"><img src="http://thetvdb.com/banners/_cache/episodes/80252/443620.jpg" alt="Episode Image"><span class="text">EPISODE 10</span></a></div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <div class="showinfo hidden">
-            <div class="cards">
-              <div class="card">
-                <div class="card-image">
-                  <img src="http://www.ivanexpert.com/blog/wp-content/uploads/2013/07/can-i-stream-it-logo.png">
-                </div>
-                <div class="card-header">
-                </div>
-                <div class="card-copy">
-                  <iframe frameborder="0" src="http://www.canistream.it/external/movie/4eae5784f5f8070141000001?l=mini" width="100%" scrolling="no"></iframe>
-                </div>
-                <div class="card-stats">
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-image">
-                  <img src="http://www.thetvdb.com/banners/graphical/80252-g2.jpg" alt="">
-                </div>
-                <div class="card-header">
-                  Another Card
-                </div>
-                <div class="card-copy">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
-                </div>
-                <div class="card-stats">
-                  <ul>
-                    <li>98<span>Items</span></li>
-                    <li>298<span>Things</span></li>
-                    <li>923<span>Objects</span></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-image">
-                  <img src="http://www.thetvdb.com/banners/graphical/80252-g5.jpg" alt="">
-                </div>
-                <div class="card-header">
-                  The Last Card
-                </div>
-                <div class="card-copy">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>
-                </div>
-                <div class="card-stats">
-                  <ul>
-                    <li>98<span>Items</span></li>
-                    <li>298<span>Things</span></li>
-                    <li>923<span>Objects</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <a href="#" class="jTscrollerPrevButton"></a>
+        <a href="#" class="jTscrollerNextButton"></a>
       </div>
-    </div>
+    </section>
+
+    <section class="top-shows-selector">
+      <div class="button-group">
+        <button class="active">Top Shows On Trackr.tv</button>
+        <button>Airing Today</button>
+        <button>On Right Now</button>
+        <button>Highest Rated</button>
+      </div>
+      <div class="search-bar">
+        <div class="search-and-submit">
+          <input type="search" placeholder="Enter Search" />
+          <button type="submit">
+            <img src="https://raw.githubusercontent.com/Magnus-G/Random/master/search-icon-black.png" alt="">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-info">
+      <div class="image-gradient-dynamic">
+        <img src="images/color-bars.jpg" alt="">
+        <div class="copy">
+          <p>Dynamic height container</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </section>
+
+    <section class="show-info">
+      <div class="show-poster">
+        <img src="images/flight-of-the-conchords.jpg">
+      </div>
+
+      <div class="show-details">
+        <div class="grid-items">
+          <a href="http://www.hbo.com/conchords" class="grid-item">
+            <img src="http://matemedia.com/wp-content/uploads/2013/10/HBO-transparent-300x123.png" alt="">
+          </a>
+          <a href="javascript:void(0)" class="grid-item grid-item-big">
+            <h1>THIS SHOW HAS ENDED.</h1>
+            <p>The last episode aired on Sunday, March 22, 2009.</p>
+          </a>
+          <a href="shows/234/index.html" id="episode_info_234" class="grid-item grid-item-big">
+            <img src="https://www.iconfinder.com/icons/126570/download/ico" alt="">
+            <!-- <h1>SEASON LIST</h1> -->
+          </a>
+          <a href="javascript:void(0)" class="grid-item">
+            <img src="https://www.iconfinder.com/icons/126581/download/ico" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="show-starring">
+        <div id="tSstarring" class="jThumbnailScroller">
+          <div class="jTscrollerContainer">
+            <div class="jTscroller">
+              <a href="#" title="Jemaine Clement"><img src="http://thetvdb.com/banners/_cache/actors/73320.jpg" /></a>
+              <a href="#" title="actor2"><img src="http://thetvdb.com/banners/_cache/actors/73319.jpg" /></a>
+              <a href="#" title="actor3"><img src="http://thetvdb.com/banners/_cache/actors/73321.jpg" /></a>
+              <a href="#" title="actor4"><img src="http://thetvdb.com/banners/_cache/actors/73323.jpg" /></a>
+              <a href="#" title="actor5"><img src="http://thetvdb.com/banners/_cache/actors/73322.jpg" /></a>
+              <a href="#" title="actor6"><img src="http://thetvdb.com/banners/_cache/actors/73318.jpg" /></a>
+            </div>
+          </div>
+          <a href="#" class="jTscrollerPrevButton"></a>
+          <a href="#" class="jTscrollerNextButton"></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <img src="images/tv.png" alt="">
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><h3>Content</h3></li>
+          <li><a href="javascript:void(0)">About</a></li>
+          <li><a href="javascript:void(0)">Contact</a></li>
+          <li><a href="javascript:void(0)">Products</a></li>
+        </ul>
+        <ul>
+          <li><h3>Follow Us</h3></li>
+          <li><a href="javascript:void(0)">Facebook</a></li>
+          <li><a href="javascript:void(0)">Twitter</a></li>
+          <li><a href="javascript:void(0)">YouTube</a></li>
+        </ul>
+        <ul>
+          <li><h3>Legal</h3></li>
+          <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+          <li><a href="javascript:void(0)">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
+    </footer>
+
     <script>
-      $(document).ready(function() {
+      jQuery.noConflict();
 
-        var owl = $("#owl-demo");
+      (function($) {
+        var menu = $('#navigation-menu');
+        var menuToggle = $('#js-mobile-menu');
 
-        owl.owlCarousel({
-
-            itemsCustom : [
-              [0, 2],
-              [450, 4],
-              [600, 4],
-              [700, 6],
-              [1000, 6],
-              [1200, 6],
-              [1400, 8],
-              [1600, 8]
-            ],
-            autoPlay : true,
-            pagination : false,
-            navigation : false
-        });
-        $("#owl-season1").owlCarousel({
-
-              items : 4,
-              pagination : false,
-              navigationText: [
-                  "<i class='icon-chevron-left icon-white'><</i>",
-                  "<i class='icon-chevron-right icon-white'>></i>"
-                  ],
-              navigation : true,
-              itemsDesktop : [1199,3],
-              itemsDesktopSmall : [979,3]
-
+        $(menuToggle).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle(function(){
+            if(menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
           });
-        $("#owl-season2").owlCarousel({
-
-              items : 4,
-              pagination : false,
-              navigationText: [
-                  "<i class='icon-chevron-left icon-white'><</i>",
-                  "<i class='icon-chevron-right icon-white'>></i>"
-                  ],
-              navigation : true,
-              itemsDesktop : [1199,3],
-              itemsDesktopSmall : [979,3]
-
-          });
-        $('.slide-button').click(function () {
-          if ($('.showinfo').is(":hidden")) {
-              $('.showinfo').slideDown('slow');
-          } else {
-              $('.showinfo').slideUp('slow');
-          }
         });
       });
-      $(".js-vertical-tab-content").hide();
-        $(".js-vertical-tab-content:first").show();
 
-        $(".js-vertical-tab").click(function(event) {
-          event.preventDefault();
+      (function($){
 
-          $(".js-vertical-tab-content").hide();
-          var activeTab = $(this).attr("rel");
-          $("#"+activeTab).show();
-
-          $(".js-vertical-tab").removeClass("is-active");
-          $(this).addClass("is-active");
-
-          $(".js-vertical-tab-accordion-heading").removeClass("is-active");
-          $(".js-vertical-tab-accordion-heading[rel^='"+activeTab+"']").addClass("is-active");
+        $(document).ready(function() {
+          $('#show_id_234').click(function() {
+            $('.show-info').slideToggle(250);
+            $('.site-info').fadeToggle(250);
+            $("#tSstarring").thumbnailScroller({
+              scrollerType:"clickButtons",
+              scrollerOrientation:"horizontal",
+              scrollSpeed:2,
+              scrollEasing:"easeOutCirc",
+              scrollEasingAmount:600,
+              acceleration:4,
+              scrollSpeed:800,
+              noScrollCenterSpace:10,
+              autoScrolling:0,
+              autoScrollingSpeed:2000,
+              autoScrollingEasing:"easeInOutQuad",
+              autoScrollingDelay:500
+            });
+          });
         });
+
+        window.onload=function(){
+          $("#tS1").thumbnailScroller({
+            scrollerType:"clickButtons",
+            scrollerOrientation:"horizontal",
+            scrollSpeed:2,
+            scrollEasing:"easeOutCirc",
+            scrollEasingAmount:600,
+            acceleration:4,
+            scrollSpeed:800,
+            noScrollCenterSpace:10,
+            autoScrolling:0,
+            autoScrollingSpeed:2000,
+            autoScrollingEasing:"easeInOutQuad",
+            autoScrollingDelay:500
+          });
+        }
+      })(jQuery);
     </script>
+    <!-- thumbnailScroller script -->
+    <script src="vendor/javascripts/jquery.thumbnailScroller.js"></script>
   </body>
 </html>

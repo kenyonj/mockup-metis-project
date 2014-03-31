@@ -1,0 +1,155 @@
+@import "episode_listing";
+
+.show-breadcrumbs{
+  @include outer-container;
+  background-color: $background-main;
+  .breadcrumb { 
+    $breadcrumb-border-color: $base-border-color;
+    $breadcrumb-border: 1px solid $breadcrumb-border-color;
+    $breadcrumb-height: $base-line-height * 1.5;
+    $breadcrumb-arrow-color: $breadcrumb-border-color;
+    $breadcrumb-background: $base-body-color;
+    $breadcrumb-inactive-hover-color: $breadcrumb-background;
+    $breadcrumb-color: $medium-gray;
+    $breadcrumb-color-hover: $base-accent-color;
+    $breadcrumb-color-active: $breadcrumb-color;
+
+    @include inline-block;
+    text-align: left;
+    // margin-bottom: $base-line-height;
+
+    a {
+      @include inline-block;
+      background-color: $breadcrumb-background;
+      border: $breadcrumb-border;
+      color: $breadcrumb-color;
+      line-height: $breadcrumb-height;
+      margin-right: -5px;
+      font-size: .8em;
+      padding: 0 $breadcrumb-height/4 0 $breadcrumb-height/2;
+      position: relative;
+      text-decoration: none;
+      margin-bottom: 2px;
+
+      &:first-child {
+        padding-left: $breadcrumb-height/2;
+        border-top-left-radius: $base-border-radius;
+        border-bottom-left-radius: $base-border-radius;
+      }
+
+      &:last-child {
+        background-color: $breadcrumb-background;
+        color: $breadcrumb-color-active;
+        border-bottom-right-radius: $base-border-radius;
+        border-top-right-radius: $base-border-radius;
+        padding-right: $breadcrumb-height/2;
+      }
+
+      &:hover {
+        color: $breadcrumb-color-hover;
+        background-color: $breadcrumb-inactive-hover-color;
+      }
+
+      &:hover:after {
+        border-left-color: $breadcrumb-inactive-hover-color;;
+      }
+
+      &:after,
+      &:before {
+        @include position(absolute, 0px auto 0px 100%);
+        border-bottom: $breadcrumb-height/2 solid transparent;
+        border-left: $breadcrumb-height/4 solid transparent;
+        border-top: $breadcrumb-height/2 solid transparent;
+        content: '';
+        display: block;
+        margin: auto;
+        z-index: 2;
+      }
+
+      &:last-child:after,
+      &:last-child:before {
+        border: none;
+      }
+
+      &:before {
+        border-left-color: $breadcrumb-arrow-color;
+        margin-left: 1px;
+        z-index: 1;
+      }
+      &:after {
+        border-left-color: $breadcrumb-background;
+      }
+
+      @include media($medium-screen) {
+        font-size: 1em;
+        padding: 0 $breadcrumb-height/2 0 $breadcrumb-height/1.5;
+      }
+    }
+  }
+}
+.show-banner{
+  @include outer-container;
+  @include box-shadow(0 0 5px 3px hsla(0, 0%, 0%, 0.65));
+  margin-top: 5px;
+  margin-bottom: 5px;
+  .image-gradient-dynamic {
+    $image-gradient-color-top: white;
+    $transparency-top: 1;
+    $image-gradient-color-bottom: black;
+    $transparency-bottom: 1;
+    $vertical-angle: 180deg;
+
+    $image-gradient-color-left: black;
+    $transparency-left: 1;
+    $image-gradient-color-right: white;
+    $transparency-right: 1;
+    $horizontal-angle: 90deg;
+
+    position: relative;
+    line-height: 0;
+    width: 100%;
+    // margin-bottom: $base-line-height;
+
+    img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    }
+
+    .copy {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: auto;
+      z-index: 999;
+      text-align: center;
+      @include transform(translate(-50%, -50%));
+
+      p {
+        line-height: 1.5em;
+        padding: 1em 2em;
+        position: relative;
+        color: white;
+        font-weight: 800;
+        background-color: transparentize(black, .6);
+      }
+    }
+
+    .overlay {
+      @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top),
+        transparentize($image-gradient-color-bottom, $transparency-bottom));
+      display: block;
+      @include position(absolute, 0px 0px 0px 0px);
+
+      &:after {
+        content: '';
+        @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left),
+          transparentize($image-gradient-color-right, $transparency-right));
+        display: block;
+        @include position(absolute, 0px 0px 0px 0px);
+      }
+    }
+  }
+}

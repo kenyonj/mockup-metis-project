@@ -1,0 +1,87 @@
+.top-shows-selector{
+  @include outer-container;
+  background-color: $background-main;
+  // margin-left:auto;
+  // margin-right:auto;
+  // width:75%;
+  .search-bar {
+    @include media($medium-screen) {
+      width: auto;
+      float: left;
+      border-top-width: 1px;
+      @include span-columns(3);
+    }
+    @include span-columns(12);
+    $search-bar-border-color: $base-border-color;
+    $search-bar-border: 1px solid $search-bar-border-color;
+    $search-bar-background: lighten($search-bar-border-color, 10);
+
+    position: relative;
+    display: inline-block;
+
+    input {
+      @include box-sizing(border-box);
+      display: block;
+    }
+
+    div.search-and-submit {
+      position: relative;
+
+      input[type=search] {
+        @include appearance(none);
+        width: 100%;
+        padding: .5em .8em;
+        font-size: .9em;
+        font-style: italic;
+        border-radius: $base-border-radius * 2;
+        margin: 0;
+      }
+
+      button[type=submit] {
+        @include button(simple, lighten($base-border-color, 10));
+        @include position(absolute, 0.3em 0.3em 0.3em 0);
+        outline: none;
+        padding: 5px 10px;
+
+        img {
+          height: 12px;
+          opacity: .7;
+        }
+      }
+    }
+  }
+  .button-group {
+    @include span-columns(9);
+    $button-group-background: $base-body-color;
+    $button-group-color: lighten($base-font-color, 30);
+    $button-group-border-highlight: lighten($button-group-background, 15);
+    $button-group-active: $base-accent-color;
+
+    button {
+      @include button(simple, $button-group-background);
+      font-weight: 100;
+      color: $button-group-color;
+      font-size: $base-font-size;
+      @include span-columns(12);
+      // outline: solid;
+      width: 100%;
+      display: block;
+      border-width: 1px;
+
+      &.active {
+        @include button(simple, $button-group-active);
+        font-weight: 100;
+        font-size: $base-font-size;
+      }
+      @include border-bottom-radius(2);
+      border-width: 1px;
+      @include media($medium-screen) {
+        width: auto;
+        float: left;
+        border-width: 1px;
+        border-top-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+      }
+    }
+  }
+}
